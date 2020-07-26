@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dsv
+  application:
+    name: item-service
+  config:
+    uri:  http://localhost:8888
+    label: master #rama-del-repo (default master)
+    #username: user
+    #password: password
+#logging:
+    #config: ./log4j2.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+
